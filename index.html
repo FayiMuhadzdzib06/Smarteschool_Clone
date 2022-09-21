@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smarteschool</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/jp-removebg-preview.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <a href="#">
+            <img src="img/ss-logo-white.png" alt="">
+        </a>
+        <ul>
+            <li class="beranda">
+                Beranda
+            </li>
+            <li>
+                <a href="kelas/kelas.html">Kelas</a>
+            </li>
+            <li>
+                <a href="materi/materi.html">Materi</a>
+            </li>
+            <li>
+                <a href="ujian/ujian.html">Ujian</a>
+            </li>
+            <li>
+                <a href="#">Postingan</a>
+            </li>
+            <li>
+                <a href="#">Konsultasi</a>
+            </li>
+            <li>
+                <a href="#">Kolaborasi</a>
+            </li>
+            <li>
+                <a href="#">Perpustakaan</a>
+            </li>
+            <li>
+                <a href="#">Tata Tertib</a>
+            </li>
+        </ul>
+        <div class="foto">
+            <div class="isi">
+                <a href="#">Profil</a>
+                <a href="#">Absen</a>
+                <a href="#">Tagihan</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Isi -->
+    <div class="container">
+        <div class="kiri">
+            <div class="absen-harian">
+                <div class="atas">
+                    <h3>Absen Harian</h3>
+                    <h5><img src="img/icon-check-alert.svg" alt=""> Kamu belum absen pulang</h5>
+                    <p>Tekan tombol absen dibawah untuk absen</p>
+                </div>
+                <p class="tanggal">17 September 2022</p>
+                <h5 class="am">Absen Masuk</h5>
+                <div class="ket-am">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <p>08:17</p>
+                    <input type="checkbox" id="foto" style="display: none">
+                    <label class="btn" for="foto">Lihat Foto</label>
+                    <!-- untuk masukin foto -->
+                    <div class="tatakan">
+                        <main>
+                            <header>
+                                <h2>Absen Harian</h2>
+                                <label class="hilang" for="foto"></label>
+                            </header>
+                        </main>
+                    </div>
+                </div>
+                <h5 class="ak">Absen Keluar</h5>
+                <div class="ket-ak">
+                    <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                    <p>Belum Absen</p>
+                </div>
+                <hr>
+                <label class="ap" for="foto">Absen Pulang</label>
+            </div>
+            <div class="jadwalSI">
+                <h3>Jadwal Saat Ini</h3>
+                <p>Jadwal belajar hari ini sudah <br> selesai</p>
+            </div>
+        </div>
+        <div class="mid">
+            <div class="penyapaan">
+                <H2>Halo, Selamat <br> Datang <br> FAYI MUHADZDZIB</H2>
+                <p>Sudah siap untuk belajar hari ini ?</p>
+                <div class="icon"></div>
+            </div>
+            <hr>
+            <!-- pelajaran1 -->
+            <div class="pelajaran1">
+                <div class="mapel">Bahasa Inggris ( XI ) - Siti Suhariyah, S.Pd</div>
+                <hr>
+                <a href="#">
+                    <div class="header">
+                        <div class="icon"></div>
+                        <p>Remedial dan pengayaan <br> <span>14 Juni 2022</span></p>
+                    </div>
+                    <p class="p">silahkan kerjakan soal remedial dan pengayaan lalu upload di Smarteschool</p>
+                    <div class="kotakNilai">
+                        <div class="nilai">76</div>
+                        <p>Tugas <br> <span>Sudah Dinilai</span></p>
+                    </div>
+                </a>
+                <hr>
+                <div class="bawah">
+                    <a href="#commentp1">
+                        <div class="komentar">
+                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                            <span>0 Komentar</span>
+                        </div>
+                    </a>
+                    <a href="#lampiranp1">
+                        <div class="lampiran">
+                            <i class="fa fa-paperclip" aria-hidden="true"></i>
+                            <span>1 Lampiran</span>
+                        </div>
+                    </a>
+                    <div class="batas">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <span>Batas Pengumpulan Tidak ada</span>
+                    </div>
+                </div>
+            </div>
+            <!-- pelajaran2 -->
+            <div class="pelajaran2">
+                <div class="mapel">Bahasa Inggris ( XI ) - Siti Suhariyah, S.Pd</div>
+                <hr>
+                <a href="#">
+                    <div class="header">
+                        <div class="icon"></div>
+                        <p>Pertemuan <br> <span>14 Juni 2022</span></p>
+                    </div>
+                    <p class="p">Jangan terlambat absen</p>
+                    <div class="kotakNilai">
+                        <div class="nilai"></div>
+                        <p>Kamu <br> <span>Sudah Absen</span></p>
+                    </div>
+                </a>
+                <hr>
+                <div class="bawah">
+                    <a href="#commentp2">
+                        <div class="komentar">
+                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                            <span>0 Komentar</span>
+                        </div>
+                    </a>
+                    <a href="#lampiranp2">
+                        <div class="lampiran">
+                            <i class="fa fa-paperclip" aria-hidden="true"></i>
+                            <span>0 Lampiran</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- pelajaran3 -->
+            <div class="pelajaran3">
+                <div class="mapel">Matematika ( XI ) - Dwi Kurniati Zaenab, S.Pd</div>
+                <hr>
+                <a href="#">
+                    <div class="header">
+                        <div class="icon"></div>
+                        <p>Remedial PAS Genap <br> <span>13 Juni 2022</span></p>
+                    </div>
+                    <p class="p">Silahkan kerjakan Soal berikut beserta cara pengerjaannya dengan <br> ketentuan</p>
+                    <p class="p2">1. Kerjakan soal dikertas folio, ditulis soalnya kemudian baru di jawab</p>
+                    <p class="p3">2. Semua soal di kerjakan dengan cara penyelesaian baik PG atau Uraian</p>
+                    <div class="kotakNilai">
+                        <div class="nilai"></div>
+                        <p>Tugas <br> <span>Sudah Dikumpul</span></p>
+                    </div>
+                </a>
+                <hr>
+                <div class="bawah">
+                    <a href="#commentp3">
+                        <div class="komentar">
+                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                            <span>0 Komentar</span>
+                        </div>
+                    </a>
+                    <a href="#lampiranp3">
+                        <div class="lampiran">
+                            <i class="fa fa-paperclip" aria-hidden="true"></i>
+                            <span>1 Lampiran</span>
+                        </div>
+                    </a>
+                    <div class="batas">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <span>Batas Pengumpulan Tidak ada</span>
+                    </div>
+                </div>
+            </div>
+            <!-- pelajaran4 -->
+            <div class="pelajaran2 pelajaran4">
+                <div class="mapel">Bahasa Inggris ( XI ) - Siti Suhariyah, S.Pd</div>
+                <hr>
+                <a href="#">
+                    <div class="header">
+                        <div class="icon"></div>
+                        <p>Pertemuan <br> <span>31 Mei 2022</span></p>
+                    </div>
+                    <p class="p">Absen ya jangan ga absen</p>
+                    <div class="kotakNilai">
+                        <div class="nilai"></div>
+                        <p>Kamu <br> <span>Sudah Absen</span></p>
+                    </div>
+                </a>
+                <hr>
+                <div class="bawah">
+                    <a href="#commentp4">
+                        <div class="komentar">
+                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                            <span>0 Komentar</span>
+                        </div>
+                    </a>
+                    <a href="#lampiranp4">
+                        <div class="lampiran">
+                            <i class="fa fa-paperclip" aria-hidden="true"></i>
+                            <span>0 Lampiran</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- pelajaran5 -->
+            <div class="pelajaran5">
+                <div class="mapel">Bahasa Inggris ( XI ) - Siti Suhariyah, S.Pd</div>
+                <hr>
+                <a href="#">
+                    <div class="header">
+                        <div class="icon"></div>
+                        <p>Biography text <br> <span>31 Mei 2022</span></p>
+                    </div>
+                    <p class="p">silahkan kalian buat 3 text tentang Biography para pahlawan dan para <br> presiden Indonesia yang sudah meninggal dunia di power point dengan <br> gambar-gambarnya lalu di upload di Smarteschool terima kasih </p>
+                    <div class="kotakNilai">
+                        <div class="nilai">88</div>
+                        <p>Tugas <br> <span>Sudah Dinilai</span></p>
+                    </div>
+                </a>
+                <hr>
+                <div class="bawah">
+                    <a href="#commentp5">
+                        <div class="komentar">
+                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                            <span>0 Komentar</span>
+                        </div>
+                    </a>
+                    <a href="#lampiranp5">
+                        <div class="lampiran">
+                            <i class="fa fa-paperclip" aria-hidden="true"></i>
+                            <span>0 Lampiran</span>
+                        </div>
+                    </a>
+                    <div class="batas">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <span>Batas Pengumpulan Tidak ada</span>
+                    </div>
+                </div>
+            </div>
+            <!-- pelajaran6 -->
+            <div class="pelajaran6">
+                <div class="mapel">Bahasa Inggris ( XI ) - Siti Suhariyah, S.Pd</div>
+                <hr>
+                <a href="#">
+                    <div class="header">
+                        <div class="icon"></div>
+                        <p>Biography text <br> <span>24 Mei 2022</span></p>
+                    </div>
+                    <p class="p">silahkan kalian unduh soal Tentang PG Biography di Lampiran lalu upload <br> di Smarteschool</p>
+                    <div class="kotakNilai">
+                        <div class="nilai">93</div>
+                        <p>Tugas <br> <span>Sudah Dinilai</span></p>
+                    </div>
+                </a>
+                <hr>
+                <div class="bawah">
+                    <a href="#commentp6">
+                        <div class="komentar">
+                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                            <span>0 Komentar</span>
+                        </div>
+                    </a>
+                    <a href="#lampiranp6">
+                        <div class="lampiran">
+                            <i class="fa fa-paperclip" aria-hidden="true"></i>
+                            <span>1 Lampiran</span>
+                        </div>
+                    </a>
+                    <div class="batas">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <span>Batas Pengumpulan Tidak ada</span>
+                    </div>
+                </div>
+            </div>
+            <!-- pelajaran7 -->
+            <div class="pelajaran2 pelajaran7">
+                <div class="mapel">Bahasa Inggris ( XI ) - Siti Suhariyah, S.Pd</div>
+                <hr>
+                <a href="#">
+                    <div class="header">
+                        <div class="icon"></div>
+                        <p>Pertemuan <br> <span>24 Mei 2022</span></p>
+                    </div>
+                    <p class="p">Jangan terlambat</p>
+                    <div class="kotakNilai">
+                        <div class="nilai"></div>
+                        <p>Kamu <br> <span>Sudah Absen</span></p>
+                    </div>
+                </a>
+                <hr>
+                <div class="bawah">
+                    <a href="#commentp7">
+                        <div class="komentar">
+                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                            <span>0 Komentar</span>
+                        </div>
+                    </a>
+                    <a href="#lampiranp7">
+                        <div class="lampiran">
+                            <i class="fa fa-paperclip" aria-hidden="true"></i>
+                            <span>0 Lampiran</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- pelajaran8 -->
+            <div class="pelajaran8">
+                <div class="mapel">Bahasa Inggris ( XI ) - Siti Suhariyah, S.Pd</div>
+                <hr>
+                <a href="#">
+                    <div class="header">
+                        <div class="icon"></div>
+                        <p>Analytical Exposition ( Exercises 21-40 ) <br> <span>17 Mei 2022</span></p>
+                    </div>
+                    <p class="p">silahkan kalian unduh soal analytical 21-40 lalu kerjakan langsung <br> di soalnya dan upload di Smarteschool setelah kalian jawab soalnya</p>
+                    <div class="kotakNilai">
+                        <div class="nilai">100</div>
+                        <p>Tugas <br> <span>Sudah Dinilai</span></p>
+                    </div>
+                </a>
+                <hr>
+                <div class="bawah">
+                    <a href="#commentp8">
+                        <div class="komentar">
+                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                            <span>0 Komentar</span>
+                        </div>
+                    </a>
+                    <a href="#lampiranp8">
+                        <div class="lampiran">
+                            <i class="fa fa-paperclip" aria-hidden="true"></i>
+                            <span>1 Lampiran</span>
+                        </div>
+                    </a>
+                    <div class="batas">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <span>Batas Pengumpulan Tidak ada</span>
+                    </div>
+                </div>
+            </div>
+            <!-- pelajaran9 -->
+            <div class="pelajaran2 pelajaran9">
+                <div class="mapel">Bahasa Inggris ( XI ) - Siti Suhariyah, S.Pd</div>
+                <hr>
+                <a href="#">
+                    <div class="header">
+                        <div class="icon"></div>
+                        <p>Pertemuan <br> <span>17 Mei 2022</span></p>
+                    </div>
+                    <p class="p">Jangan terlambat absen</p>
+                    <div class="kotakNilai">
+                        <div class="nilai"></div>
+                        <p>Kamu <br> <span>Sudah Absen</span></p>
+                    </div>
+                </a>
+                <hr>
+                <div class="bawah">
+                    <a href="#commentp9">
+                        <div class="komentar">
+                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                            <span>0 Komentar</span>
+                        </div>
+                    </a>
+                    <a href="#lampiranp9">
+                        <div class="lampiran">
+                            <i class="fa fa-paperclip" aria-hidden="true"></i>
+                            <span>0 Lampiran</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="kanan">
+            <div class="absen-kelas">
+                <h3>Absen Kelas</h3>
+                <div class="ilustrasion"></div>
+                <p>Tidak ada jam mengajar hari ini</p>
+            </div>
+            <div class="jadwal-ujian">
+                <h3>Jadwal Ujian</h3>
+                <div class="ilustrasion"></div>
+                <p>Tidak ada jadwal ujian</p>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <p>©Smarteschool 2022. Hak Cipta Dilindungi oleh Undang-undang.</p>
+            <a href="#smarteschool">Powered by Smarteschool.</a>
+        </div>
+    </div>
+    <!-- help -->
+    <input type="checkbox" id="help" style="display: none;">
+    <label for="help" class="hedset">
+        <i class="fa fa-headphones"></i>
+    </label>
+    <div class="isi-help" >
+        <label for="help" class="close">
+            <i class="fa fa-close"></i>
+        </label>
+        <ul>
+            <li>
+                <a href="#">Tutorial Membaca Materi</a>
+            </li>
+            <li>
+                <a href="#">Tutorial Menghadiri Pertemuan</a>
+            </li>
+            <li>
+                <a href="#">Tutorial Mengerjakan Ujian</a>
+            </li>
+            <li>
+                <a href="#">Ulangi Asisten Tutorial</a>
+            </li>
+            <li>
+                <a href="#">Hubungi Customer Service</a>
+            </li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>
