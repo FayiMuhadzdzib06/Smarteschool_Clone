@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smarteschool</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../img/jp-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <a href="#">
+            <img src="../img/ss-logo-white.png" alt="">
+        </a>
+        <ul>
+            <li>
+                <a href="../index.html">Beranda</a>
+            </li>
+            <li class="kelas">
+                Kelas
+            </li>
+            <li>
+                <a href="../materi/index.html">Materi</a>
+            </li>
+            <li>
+                <a href="ujian/ujian.html">Ujian</a>
+            </li>
+            <li>
+                <a href="#">Postingan</a>
+            </li>
+            <li>
+                <a href="#">Konsultasi</a>
+            </li>
+            <li>
+                <a href="#">Kolaborasi</a>
+            </li>
+            <li>
+                <a href="#">Perpustakaan</a>
+            </li>
+            <li>
+                <a href="#">Tata Tertib</a>
+            </li>
+        </ul>
+        <div class="foto">
+            <div class="isi">
+                <a href="#">Profil</a>
+                <a href="#">Absen</a>
+                <a href="#">Tagihan</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- isi -->
+    <div class="container">
+        <div class="kiri">
+            <!-- mtk -->
+            <div class="mtk">
+                <div class="header">
+                    <h3>Matematika ( XII ) <br><span>Dwi Kurniati Zaenab, S.Pd</span></h3>
+                    <a href="#ingpo" class="icon"></a>
+                </div>
+                <a href="#kelasmtk" class="btn">
+                    Lihat kelas
+                </a>
+            </div>
+            <!-- pkn -->
+            <div class="pkn">
+                <div class="header">
+                    <h3>Pendidikan Pancasila dan <br> Kewarganegaraan ( XII ) <br><span>Suar Sandhika Praditya, S.Pd</span></h3>
+                    <a href="#ingpo" class="icon"></a>
+                </div>
+                <a href="#kelasmtk" class="btn">
+                    Lihat kelas
+                </a>
+            </div>
+            <!-- pbo -->
+            <div class="pbo">
+                <div class="header">
+                    <h3>Pemrograman<br> Berorientasi Object ( XII ) <br><span>Firman Aulia, S.Pd</span></h3>
+                    <a href="#ingpo" class="icon"></a>
+                </div>
+                <a href="#kelasmtk" class="btn">
+                    Lihat kelas
+                </a>
+            </div>
+            <!-- agama -->
+            <div class="agama">
+                <div class="header">
+                    <h3>Pendidikan Agama dan<br> Budi Pekerti ( XII ) <br><span>Ahmad Huzaifah, S.Pd</span></h3>
+                    <a href="#ingpo" class="icon"></a>
+                </div>
+                <a href="#kelasmtk" class="btn">
+                    Lihat kelas
+                </a>
+            </div>
+            <!-- indo -->
+            <div class="indo">
+                <div class="header">
+                    <h3>Bahasa Indonesia( XII ) <br><span>Saipul Anwar, S.Pd</span></h3>
+                    <a href="#ingpo" class="icon"></a>
+                </div>
+                <a href="#kelasmtk" class="btn">
+                    Lihat kelas
+                </a>
+            </div>
+
+        </div>
+        <div class="mid">
+            <!-- basis data -->
+            <div class="basis-data">
+                <div class="header">
+                    <h3>Basis Data ( XII ) <br><span>Muhammad Rizki Akbar Rabbani</span></h3>
+                    <a href="#ingpo" class="icon"></a>
+                </div>
+                <a href="#kelasmtk" class="btn">
+                    Lihat kelas
+                </a>
+            </div>
+            <!-- inggris -->
+            <div class="inggris">
+                <div class="header">
+                    <h3>Bahasa Inggris ( XII ) <br><span>M. Risky Ramadhan, S.Pd</span></h3>
+                    <a href="#ingpo" class="icon"></a>
+                </div>
+                <a href="#kelasmtk" class="btn">
+                    Lihat kelas
+                </a>
+            </div>
+            <!-- pwpb -->
+            <div class="pwpb">
+                <div class="header">
+                    <h3>Pemrograman Web dan <br> Perangkat Bergerak ( XII ) <br><span>Muhammad Rizqi Akbar Rabbani</span></h3>
+                    <a href="#ingpo" class="icon"></a>
+                </div>
+                <a href="#kelasmtk" class="btn">
+                    Lihat kelas
+                </a>
+            </div>
+            <!-- pkk -->
+            <div class="pkk">
+                <div class="header">
+                    <h3>Prduk Kreatif dan <br> Kewirausahaan( XII ) <br><span>Muhammad Rizqi Akbar Rabbani</span></h3>
+                    <a href="#ingpo" class="icon"></a>
+                </div>
+                <a href="#kelasmtk" class="btn">
+                    Lihat kelas
+                </a>
+            </div>
+        </div>
+        <div class="kanan">
+            <!-- senin -->
+            <div class="senin" id="snn">
+                <div class="header">
+                    <i onclick="senming()" class="al fa fa-arrow-left"></i>
+                    <h3>Senin</h3>
+                    <i onclick="sensel()" class="ar fa fa-arrow-right"></i>
+                </div>
+                <ul>
+                    <a href="#">
+                        <li>
+                            <h3>Matematika ( XII )</h3>
+                            <p>06:45 - 07:30</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Matematika ( XII )</h3>
+                            <p>07:30 - 08:15</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Matematika ( XII )</h3>
+                            <p>08:15 - 09:00</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Matematika ( XII )</h3>
+                            <p>08:15 - 09:15</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Matematika ( XII )</h3>
+                            <p>09:15 - 10:00</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Basis Data ( XII )</h3>
+                            <p>10:00 - 10:45</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Basis Data ( XII )</h3>
+                            <p>10:45 - 11:30</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Basis Data ( XII )</h3>
+                            <p>13:00 - 13:45</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Pendidikan Pancasila <br> dan Kewarganegaraan ( XII )</h3>
+                            <p>13:45 - 14:30</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Pendidikan Pancasila <br> dan Kewarganegaraan ( XII )</h3>
+                            <p>14:30 - 15:15</p>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <!-- Selasa -->
+            <div class="selasa" id="slsa">
+                <div class="header">
+                    <i onclick="selsen()" class="al fa fa-arrow-left"></i>
+                    <h3>Selasa</h3>
+                    <i onclick="selrab()" class="ar fa fa-arrow-right"></i>
+                </div>
+                <ul>
+                    <a href="#">
+                        <li>
+                            <h3>Bahasa Inggris ( XII )</h3>
+                            <p>06:45 - 07:30</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Bahasa Inggris ( XII )</h3>
+                            <p>07:30 - 08:15</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Pemrograman <br> Berorientasi Obyek ( XII )</h3>
+                            <p>08:15 - 09:00</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Pemrograman <br> Berorientasi Obyek ( XII )</h3>
+                            <p>09:00 - 10:00</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Pemrograman Web dan <br> Perangkat Bergerak ( XII )</h3>
+                            <p>10:00 - 10:45</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Pemrograman Web dan <br> Perangkat Bergerak ( XII )</h3>
+                            <p>10:45 - 11:30</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Pemrograman Web dan <br> Perangkat Bergerak ( XII )</h3>
+                            <p>13:00 - 13:45</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Pemrograman Web dan <br> Perangkat Bergerak ( XII )</h3>
+                            <p>13:45 - 14:30</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Pemrograman Web dan <br> Perangkat Bergerak ( XII )</h3>
+                            <p>14:30 - 15:15</p>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <!-- rabu -->
+            <div class="rabu" id="rbu">
+                <div class="header">
+                    <i onclick="rabsel()" class="al fa fa-arrow-left"></i>
+                    <h3>Rabu</h3>
+                    <i onclick="rabkam()" class="ar fa fa-arrow-right"></i>
+                </div>
+                <ul>
+                    <a href="#">
+                        <li>
+                            <h3>Pemrograman Web dan <br> Perangkat Bergerak ( XII )</h3>
+                            <p>06:45 - 07:30</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Pemrograman Web dan <br> Perangkat Bergerak ( XII )</h3>
+                            <p>07:30 - 08:15</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Pemrograman Web dan <br> Perangkat Bergerak ( XII )</h3>
+                            <p>08:15 - 09:15</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Pemrograman Web dan <br> Perangkat Bergerak ( XII )</h3>
+                            <p>09:15 - 10:00</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Pemrograman Web dan <br> Perangkat Bergerak ( XII )</h3>
+                            <p>10:00 - 10:45</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Bahasa Inggris ( XII )</h3>
+                            <p>10:45 - 11:30</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Pemrograman <br> Berorientasi Obyek ( XII )</h3>
+                            <p>13:00 - 13:45</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Pemrograman <br> Berorientasi Obyek ( XII )</h3>
+                            <p>13:45 - 14:30</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Pemrograman <br> Berorientasi Obyek ( XII )</h3>
+                            <p>14:30 - 15:15</p>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <!-- kamis -->
+            <div class="kamis" id="kms">
+                <div class="header">
+                    <i onclick="karab()" class="al fa fa-arrow-left"></i>
+                    <h3>Kamis</h3>
+                    <i onclick="kajum()" class="ar fa fa-arrow-right"></i>
+                </div>
+                <ul>
+                    <a href="#">
+                        <li>
+                            <h3>Pemrograman Web dan <br> Perangkat Bergerak ( XII )</h3>
+                            <p>06:45 - 07:30</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Pemrograman Web dan <br> Perangkat Bergerak ( XII )</h3>
+                            <p>07:30 - 08:15</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Pendidikan Agama dan <br> Budi Pekerti ( XII )</h3>
+                            <p>08:15 - 09:15</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Pendidikan Agama dan <br> Budi Pekerti ( XII )</h3>
+                            <p>09:15 - 10:00</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Pendidikan Agama dan <br> Budi Pekerti ( XII )</h3>
+                            <p>10:00 - 10:45</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Produk Kreatif dan <br> Kewirausahaan ( XII )</h3>
+                            <p>10:45 - 11:30</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Produk Kreatif dan <br> Kewirausahaan ( XII )</h3>
+                            <p>13:00 - 13:45</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Bahasa Indonesia ( XII )</h3>
+                            <p>13:45 - 14:30</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Bahasa Indonesia ( XII )</h3>
+                            <p>14:30 - 15:15</p>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <!-- jumat -->
+            <div class="jumat" id="jmt">
+                <div class="header">
+                    <i onclick="jummis()" class="al fa fa-arrow-left"></i>
+                    <h3>Jumat</h3>
+                    <i onclick="jumsab()" class="ar fa fa-arrow-right"></i>
+                </div>
+                <ul>
+                    <a href="#">
+                        <li>
+                            <h3>Produk Kreatif dan <br> Kewirausahaan ( XII )</h3>
+                            <p>06:45 - 07:30</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Produk Kreatif dan <br> Kewirausahaan ( XII )</h3>
+                            <p>07:30 - 08:15</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Pemrograman <br> Berorientasi Obyek ( XII )</h3>
+                            <p>08:15 - 09:00</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Pemrograman<br> Berorientasi Obyek ( XII )</h3>
+                            <p>10:00 - 10:45</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Produk Kreatif dan <br> Kewirausahaan ( XII )</h3>
+                            <p>10:45 - 11:30</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Produk Kreatif dan <br> Kewirausahaan ( XII )</h3>
+                            <p>12:30 - 13:45</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <h3>Produk Kreatif dan <br> Kewirausahaan ( XII )</h3>
+                            <p>13:45 - 14:30</p>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <!-- sabtu -->
+            <div class="sabtu" id="sbtu">
+                <div class="header">
+                    <i onclick="sabjum()" class="al fa fa-arrow-left"></i>
+                    <h3>Sabtu</h3>
+                    <i onclick="sabming()" class="ar fa fa-arrow-right"></i>
+                </div>
+                <div class="icon"></div>
+                <p>Tidak ada kelas hari ini</h4>
+            </div>
+            <!-- Minggu -->
+            <div class="minggu" id="mngu">
+                <div class="header">
+                    <i onclick="mingsab()" class="al fa fa-arrow-left"></i>
+                    <h3>Minggu</h3>
+                    <i onclick="mingsen()" class="ar fa fa-arrow-right"></i>
+                </div>
+                <div class="icon"></div>
+                <p>Tidak ada kelas hari ini</h4>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <p>©Smarteschool 2022. Hak Cipta Dilindungi oleh Undang-undang.</p>
+            <a href="https://smarteschool.id/" target="_blank">Powered by Smarteschool.</a>
+        </div>
+    </div>
+    <!-- help -->
+    <input type="checkbox" id="help" style="display: none;">
+    <label for="help" class="hedset">
+        <i class="fa fa-headphones"></i>
+    </label>
+    <div class="isi-help" >
+        <label for="help" class="close">
+            <i class="fa fa-close"></i>
+        </label>
+        <ul>
+            <li>
+                <a href="#">Tutorial Membaca Materi</a>
+            </li>
+            <li>
+                <a href="#">Tutorial Menghadiri Pertemuan</a>
+            </li>
+            <li>
+                <a href="#">Tutorial Mengerjakan Ujian</a>
+            </li>
+            <li>
+                <a href="#">Ulangi Asisten Tutorial</a>
+            </li>
+            <li>
+                <a href="#">Hubungi Customer Service</a>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        // senin
+        function senming(){
+            document.getElementById('snn').style.display = 'none';
+            document.getElementById('mngu').style.display = 'block';
+        }
+        function sensel(){
+            document.getElementById('snn').style.display = 'none';
+            document.getElementById('slsa').style.display = 'block';
+        }
+        // selasa
+        function selsen(){
+            document.getElementById('slsa').style.display = 'none';
+            document.getElementById('snn').style.display = 'block';
+        }
+        function selrab(){
+            document.getElementById('slsa').style.display = 'none';
+            document.getElementById('rbu').style.display = 'block';
+        }
+        // rabu
+        function rabsel(){
+            document.getElementById('rbu').style.display = 'none';
+            document.getElementById('slsa').style.display = 'block';
+        }
+        function rabkam(){
+            document.getElementById('rbu').style.display = 'none';
+            document.getElementById('kms').style.display = 'block';
+        }
+        // kamis
+        function karab(){
+            document.getElementById('kms').style.display = 'none';
+            document.getElementById('rbu').style.display = 'block';
+        }
+        function kajum(){
+            document.getElementById('kms').style.display = 'none';
+            document.getElementById('jmt').style.display = 'block';
+        }
+        // jumat
+        function jummis(){
+            document.getElementById('kms').style.display = 'block';
+            document.getElementById('jmt').style.display = 'none';
+        }
+        function jumsab(){
+            document.getElementById('sbtu').style.display = 'block';
+            document.getElementById('jmt').style.display = 'none';
+        }
+        // sabtu
+        function sabjum(){
+            document.getElementById('sbtu').style.display = 'none';
+            document.getElementById('jmt').style.display = 'block';
+        }
+        function sabming(){
+            document.getElementById('sbtu').style.display = 'none';
+            document.getElementById('mngu').style.display = 'block';
+        }
+        // minggu
+        function mingsab(){
+            document.getElementById('sbtu').style.display = 'block';
+            document.getElementById('mngu').style.display = 'none';
+        }
+        function mingsen(){
+            document.getElementById('snn').style.display = 'block';
+            document.getElementById('mngu').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
